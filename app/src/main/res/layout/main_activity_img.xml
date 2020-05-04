@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="11dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="21dp">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="choose_file"
+        android:id="@+id/buttonChoose" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/imageView" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="upload_image"
+        android:id="@+id/buttonUpload" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="view_image"
+        android:id="@+id/buttonViewImage" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/productName"
+            android:hint="Product Name"
+            android:textColorHint="@color/gray"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle6"
+            android:paddingLeft="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/productType"
+            android:hint="Product Type"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle6"
+            android:paddingLeft="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/quantity"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle6"
+            android:paddingLeft="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_saveProduct"
+        android:layout_width="190sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="35sp"
+        android:background="@drawable/buttondesign"
+        android:text="Save Product"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

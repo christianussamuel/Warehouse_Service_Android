@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_sydney_opera_house"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_history"
+        android:enabled="true"
+        android:icon="@drawable/ic_clock"
+        android:title="History"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notif"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Account"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selr_tv_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    android:background="@color/colorText"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dip">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <!-- TextView Nama Product -->
+        <TextView
+            android:id="@+id/txt_nama_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/productImage"/>
+
+        <!-- TextView Type -->
+        <TextView
+            android:id="@+id/txt_type"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_nama_product"
+            android:layout_toRightOf="@id/productImage"/>
+
+        <!-- TextView Deskripsi -->
+        <TextView
+            android:id="@+id/txt_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_type"
+            android:layout_toRightOf="@id/productImage"/>
+
+        <!-- TextView jumlah -->
+        <TextView
+            android:id="@+id/txt_jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_deskripsi"
+            android:layout_toRightOf="@id/productImage"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
